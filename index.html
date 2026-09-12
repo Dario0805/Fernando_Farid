@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)#portada -->
+<html lang="es" class="scroll-smooth"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartilla de Pausas Activas y Ergonomía - Instrumentación Industrial</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            700: '#075985',
+                            800: '#0c4a6e',
+                            900: '#0f172a',
+                        },
+                        industrial: {
+                            amber: '#d97706',
+                            teal: '#0d9488',
+                            slate: '#334155',
+                            emerald: '#059669',
+                            rose: '#e11d48'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @media print {
+            .no-print { display: none !important; }
+            body { background: white !important; color: black !important; }
+            .page-break { page-break-before: always; }
+            .shadow-xl, .shadow-md, .shadow-lg, .shadow-sm { box-shadow: none !important; }
+            .border-dashed { border-style: solid !important; }
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #075985 100%);
+        }
+        .card-glow:hover {
+            box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.15), 0 8px 10px -6px rgba(2, 132, 199, 0.1);
+        }
+        /* ---------- Lightbox / zoom de evidencias fotográficas ---------- */
+        .img-zoom-wrap { cursor: zoom-in; }
+        .img-zoom-btn { opacity: 0; transition: opacity 0.2s ease; }
+        .group\/img:hover .img-zoom-btn { opacity: 1; }
+        #lightbox-overlay { transition: opacity 0.2s ease; }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Plus Jakarta Sans, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.-bottom-24{bottom:-6rem}.-left-24{left:-6rem}.-right-10{right:-2.5rem}.-right-24{right:-6rem}.-top-10{top:-2.5rem}.-top-24{top:-6rem}.left-0{left:0px}.left-6{left:1.5rem}.right-0{right:0px}.top-0{top:0px}.top-3{top:0.75rem}.z-10{z-index:10}.z-50{z-index:50}.col-span-2{grid-column:span 2 / span 2}.mx-auto{margin-left:auto;margin-right:auto}.my-auto{margin-top:auto;margin-bottom:auto}.mb-0\.5{margin-bottom:0.125rem}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-1{margin-right:0.25rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-14{height:3.5rem}.h-16{height:4rem}.h-40{height:10rem}.h-9{height:2.25rem}.h-96{height:24rem}.min-h-screen{min-height:100vh}.w-14{width:3.5rem}.w-3\/4{width:75%}.w-40{width:10rem}.w-9{width:2.25rem}.w-96{width:24rem}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.max-w-6xl{max-width:72rem}.max-w-7xl{max-width:80rem}.max-w-xl{max-width:36rem}.shrink-0{flex-shrink:0}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-10{gap:2.5rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-1 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.25rem * var(--tw-space-x-reverse));margin-left:calc(0.25rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.divide-y > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-slate-700\/80 > :not([hidden]) ~ :not([hidden]){border-color:rgb(51 65 85 / 0.8)}.overflow-hidden{overflow:hidden}.scroll-smooth{scroll-behavior:smooth}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-brand-100{--tw-border-opacity:1;border-color:rgb(224 242 254 / var(--tw-border-opacity, 1))}.border-brand-500\/30{border-color:rgb(2 132 199 / 0.3)}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-200\/80{border-color:rgb(226 232 240 / 0.8)}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-slate-700\/80{border-color:rgb(51 65 85 / 0.8)}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.border-teal-200{--tw-border-opacity:1;border-color:rgb(153 246 228 / var(--tw-border-opacity, 1))}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.bg-brand-100{--tw-bg-opacity:1;background-color:rgb(224 242 254 / var(--tw-bg-opacity, 1))}.bg-brand-100\/70{background-color:rgb(224 242 254 / 0.7)}.bg-brand-50{--tw-bg-opacity:1;background-color:rgb(240 249 255 / var(--tw-bg-opacity, 1))}.bg-brand-500\/10{background-color:rgb(2 132 199 / 0.1)}.bg-brand-500\/15{background-color:rgb(2 132 199 / 0.15)}.bg-brand-500\/20{background-color:rgb(2 132 199 / 0.2)}.bg-brand-600{--tw-bg-opacity:1;background-color:rgb(3 105 161 / var(--tw-bg-opacity, 1))}.bg-industrial-teal{--tw-bg-opacity:1;background-color:rgb(13 148 136 / var(--tw-bg-opacity, 1))}.bg-industrial-teal\/20{background-color:rgb(13 148 136 / 0.2)}.bg-purple-100{--tw-bg-opacity:1;background-color:rgb(243 232 255 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-200{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-800\/80{background-color:rgb(30 41 59 / 0.8)}.bg-slate-800\/90{background-color:rgb(30 41 59 / 0.9)}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-slate-900\/95{background-color:rgb(15 23 42 / 0.95)}.bg-teal-100{--tw-bg-opacity:1;background-color:rgb(204 251 241 / var(--tw-bg-opacity, 1))}.bg-teal-100\/70{background-color:rgb(204 251 241 / 0.7)}.bg-teal-50{--tw-bg-opacity:1;background-color:rgb(240 253 250 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-tr{background-image:linear-gradient(to top right, var(--tw-gradient-stops))}.from-brand-500{--tw-gradient-from:#0284c7 var(--tw-gradient-from-position);--tw-gradient-to:rgb(2 132 199 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-brand-600{--tw-gradient-from:#0369a1 var(--tw-gradient-from-position);--tw-gradient-to:rgb(3 105 161 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-slate-900{--tw-gradient-from:#0f172a var(--tw-gradient-from-position);--tw-gradient-to:rgb(15 23 42 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-brand-900{--tw-gradient-to:rgb(15 23 42 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #0f172a var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-sky-300{--tw-gradient-to:rgb(125 211 252 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #7dd3fc var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-industrial-teal{--tw-gradient-to:#0d9488 var(--tw-gradient-to-position)}.to-slate-900{--tw-gradient-to:#0f172a var(--tw-gradient-to-position)}.to-teal-300{--tw-gradient-to:#5eead4 var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.pb-12{padding-bottom:3rem}.pb-16{padding-bottom:4rem}.pr-0{padding-right:0px}.pt-24{padding-top:6rem}.pt-3{padding-top:0.75rem}.pt-4{padding-top:1rem}.pt-6{padding-top:1.5rem}.text-left{text-align:left}.text-center{text-align:center}.text-justify{text-align:justify}.font-heading{font-family:Outfit, sans-serif}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.font-sans{font-family:Plus Jakarta Sans, sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-6xl{font-size:3.75rem;line-height:1}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-light{font-weight:300}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}.text-brand-500\/20{color:rgb(2 132 199 / 0.2)}.text-brand-600{--tw-text-opacity:1;color:rgb(3 105 161 / var(--tw-text-opacity, 1))}.text-brand-700{--tw-text-opacity:1;color:rgb(7 89 133 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-industrial-amber{--tw-text-opacity:1;color:rgb(217 119 6 / var(--tw-text-opacity, 1))}.text-industrial-teal{--tw-text-opacity:1;color:rgb(13 148 136 / var(--tw-text-opacity, 1))}.text-purple-400{--tw-text-opacity:1;color:rgb(192 132 252 / var(--tw-text-opacity, 1))}.text-purple-700{--tw-text-opacity:1;color:rgb(126 34 206 / var(--tw-text-opacity, 1))}.text-red-400{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.text-slate-100{--tw-text-opacity:1;color:rgb(241 245 249 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-teal-700{--tw-text-opacity:1;color:rgb(15 118 110 / var(--tw-text-opacity, 1))}.text-teal-800{--tw-text-opacity:1;color:rgb(17 94 89 / var(--tw-text-opacity, 1))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.blur-3xl{--tw-blur:blur(64px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.blur-xl{--tw-blur:blur(24px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-xl{--tw-backdrop-blur:blur(24px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.selection\:bg-brand-500 *::selection{--tw-bg-opacity:1;background-color:rgb(2 132 199 / var(--tw-bg-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-brand-500::selection{--tw-bg-opacity:1;background-color:rgb(2 132 199 / var(--tw-bg-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:-translate-y-0\.5:hover{--tw-translate-y:-0.125rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-brand-500\/40:hover{border-color:rgb(2 132 199 / 0.4)}.hover\:bg-brand-500:hover{--tw-bg-opacity:1;background-color:rgb(2 132 199 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-100:hover{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-200:hover{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.hover\:bg-teal-700:hover{--tw-bg-opacity:1;background-color:rgb(15 118 110 / var(--tw-bg-opacity, 1))}.hover\:from-brand-500:hover{--tw-gradient-from:#0284c7 var(--tw-gradient-from-position);--tw-gradient-to:rgb(2 132 199 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:to-teal-500:hover{--tw-gradient-to:#14b8a6 var(--tw-gradient-to-position)}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}@media (min-width: 640px){.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.sm\:p-10{padding:2.5rem}.sm\:p-8{padding:2rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}}@media (min-width: 768px){.md\:inline{display:inline}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:divide-x > :not([hidden]) ~ :not([hidden]){--tw-divide-x-reverse:0;border-right-width:calc(1px * var(--tw-divide-x-reverse));border-left-width:calc(1px * calc(1 - var(--tw-divide-x-reverse)))}.md\:divide-y-0 > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(0px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(0px * var(--tw-divide-y-reverse))}.md\:pl-6{padding-left:1.5rem}.md\:pr-4{padding-right:1rem}.md\:pt-0{padding-top:0px}.md\:text-6xl{font-size:3.75rem;line-height:1}}@media (min-width: 1024px){.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}}</style></head>
+<body class="bg-slate-100 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white pb-12">
+
+    <!-- Navegación Flotante -->
+    <nav class="fixed top-0 left-0 right-0 bg-slate-900/95 backdrop-blur-md text-white z-50 border-b border-slate-800 no-print shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-500 to-industrial-teal flex items-center justify-center font-bold text-white shadow-lg">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <span class="font-heading font-bold text-base sm:text-lg tracking-tight">ErgoControl <span class="text-brand-400 text-xs px-2 py-0.5 rounded-full bg-brand-500/10 border border-brand-500/30">Ficha 3238171</span></span>
+                </div>
+                <div class="flex space-x-1 sm:space-x-3 text-xs sm:text-sm font-medium">
+                    <a href="#portada" class="px-2.5 py-1.5 rounded-lg hover:text-brand-400 transition">Portada</a>
+                    <a href="#autores" class="px-2.5 py-1.5 rounded-lg hover:text-brand-400 transition">Equipo</a>
+                    <a href="#introduccion" class="px-2.5 py-1.5 rounded-lg hover:text-brand-400 transition">Intro</a>
+                    <a href="#gimnasia-cerebral" class="px-2.5 py-1.5 rounded-lg hover:text-brand-400 transition">G. Cerebral</a>
+                    <a href="#pausas-activas" class="px-2.5 py-1.5 rounded-lg hover:text-brand-400 transition">Pausas (10)</a>
+                    <a href="#posturas-ergonomicas" class="px-2.5 py-1.5 rounded-lg hover:text-brand-400 transition">Posturas (10)</a>
+                    <button onclick="window.print()" class="bg-brand-600 hover:bg-brand-500 text-white px-3 py-1.5 rounded-lg flex items-center gap-1.5 transition shadow-md">
+                        <i class="fa-solid fa-print"></i>
+                        <span class="hidden md:inline">Imprimir</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. PORTADA -->
+    <section id="portada" class="min-h-screen gradient-bg text-white relative pt-24 pb-16 flex items-center justify-center overflow-hidden">
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-brand-500/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-industrial-teal/20 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10 my-auto">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-800/90 border border-slate-700 text-brand-400 text-xs sm:text-sm font-semibold mb-6 shadow-inner">
+                <i class="fa-solid fa-shield-halved text-industrial-amber"></i>
+                <span>SISTEMA DE SEGURIDAD Y SALUD EN EL TRABAJO (SST)</span>
+            </div>
+
+            <h1 class="font-heading text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                PAUSAS ACTIVAS Y ERGONOMIA <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 via-sky-300 to-teal-300"></span>
+            </h1>
+
+            <p class="text-slate-300 text-base sm:text-lg font-light mb-8 max-w-2xl mx-auto">
+                Guía técnica de salud ocupacional, gimnasia cerebral y biomecánica postural aplicada a la instrumentación industrial y automatización.
+            </p>
+
+            <!-- Card con Datos de la Titulada -->
+            <div class="bg-slate-800/80 backdrop-blur-xl border border-slate-700/80 rounded-2xl p-6 sm:p-8 text-left shadow-2xl mb-8 max-w-3xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 divide-y md:divide-y-0 md:divide-x divide-slate-700/80">
+                    <div class="col-span-2 pr-0 md:pr-4">
+                        <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold block mb-1">Nombre de la Titulada</span>
+                        <h2 class="text-base sm:text-lg font-bold text-white leading-snug">
+                            Implementación y mantenimiento en sistemas de instrumentación y control de procesos industriales
+                        </h2>
+                    </div>
+                    <div class="pt-4 md:pt-0 md:pl-6 flex flex-col justify-center">
+                        <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold block mb-1">Número de Ficha</span>
+                        <span class="text-3xl font-mono font-extrabold text-brand-400">3238171</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#autores" class="inline-flex items-center gap-3 bg-gradient-to-r from-brand-600 to-industrial-teal hover:from-brand-500 hover:to-teal-500 text-white font-semibold px-8 py-3.5 rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5 no-print">
+                <span>Explorar la Cartilla</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- 2. CUERPO INTERDISCIPLINARIO Y LEMA -->
+    <section id="autores" class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-10">
+                <span class="text-xs font-bold text-brand-600 uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full border border-brand-100">Cuerpo Interdisciplinario</span>
+                <h2 class="text-3xl font-heading font-bold text-slate-900 mt-2">Equipo de Elaboración</h2>
+                <p class="text-slate-500 text-sm mt-1">Especialistas en la gestión biomecánica y bienestar para la instrumentación de procesos.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <!-- Autor 1 -->
+                <div class="flex items-center space-x-4 p-6 rounded-2xl bg-slate-50 border border-slate-200/80 shadow-sm hover:border-brand-500/40 transition">
+                    <div class="w-14 h-14 rounded-2xl bg-brand-600 text-white flex items-center justify-center font-bold text-xl shadow-md shrink-0">
+                        FA
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-900">Farid Andrey Alfonso Jaime</h3>
+                        <p class="text-xs font-medium text-slate-500">Desarrollador de Contenido Técnico y Prevención SST</p>
+                        <span class="inline-block mt-2 text-xs text-brand-700 bg-brand-100/70 font-semibold px-2.5 py-0.5 rounded-md">Instrumentador Industrial</span>
+                    </div>
+                </div>
+
+                <!-- Autor 2 -->
+                <div class="flex items-center space-x-4 p-6 rounded-2xl bg-slate-50 border border-slate-200/80 shadow-sm hover:border-brand-500/40 transition">
+                    <div class="w-14 h-14 rounded-2xl bg-industrial-teal text-white flex items-center justify-center font-bold text-xl shadow-md shrink-0">
+                        FS
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-slate-900">Fernando Stevan Salgado Jiménez</h3>
+                        <p class="text-xs font-medium text-slate-500">Diseñador Biomecánico y Ergonomía de Procesos</p>
+                        <span class="inline-block mt-2 text-xs text-teal-800 bg-teal-100/70 font-semibold px-2.5 py-0.5 rounded-md">Control de Procesos</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LEMA -->
+            <div class="relative rounded-2xl bg-gradient-to-r from-slate-900 via-brand-900 to-slate-900 p-8 sm:p-10 text-white text-center shadow-xl overflow-hidden border border-slate-800">
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-brand-500/20 rounded-full blur-xl"></div>
+                <i class="fa-solid fa-quote-left text-brand-500/20 text-6xl absolute top-3 left-6"></i>
+                <div class="relative z-10 max-w-3xl mx-auto">
+                    <span class="text-brand-400 uppercase font-bold text-xs tracking-widest block mb-2">Lema Inspiracional</span>
+                    <blockquote class="font-heading text-lg sm:text-2xl font-bold italic leading-relaxed text-slate-100">
+                        "Calibrando nuestra salud, instrumentando la precisión y optimizando cada movimiento para una industria eficiente, segura y sostenible."
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. INTRODUCCIÓN -->
+    <section id="introduccion" class="py-16 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-7">
+                    <span class="text-xs font-bold text-brand-600 uppercase tracking-widest bg-brand-100 px-3 py-1 rounded-full">Marco Técnico Ocupacional</span>
+                    <h2 class="text-3xl font-heading font-bold text-slate-900 mt-3 mb-6">
+                        Importancia de las Pausas Activas y Ergonomía en la Instrumentación
+                    </h2>
+                    
+                    <div class="space-y-4 text-slate-700 leading-relaxed text-justify text-sm sm:text-base">
+                        <p>
+                            En el ámbito de la <strong>Implementación y Mantenimiento en Sistemas de Instrumentación y Control de Procesos Industriales</strong>, los técnicos e ingenieros desempeñan labores caracterizadas por una alta exigencia osteomuscular y neurocognitiva. El trabajo abarca desde la micro-soldadura y montaje fino de borneras en tableros PLC/DCS, la supervisión continua frente a pantallas SCADA/HMI, hasta maniobras físicas pesadas en planta (instalación de válvulas de control, calibración de transmisores de presión/flujo y recorrido de tuberías).
+                        </p>
+                        <p>
+                            Estas labores exponen al personal a <strong>posturas estáticas mantenidas</strong> (al estar sentados en centros de control o encorvados en gabinetes de campo), <strong>movimientos repetitivos de motricidad fina</strong> (uso de perilleros, calibradores y destornilladores) y <strong>sobrecarga biomecánica lumbar</strong> durante el levantamiento de componentes pesados.
+                        </p>
+                        <p>
+                            La implementación metódica de pausas activas y posturas ergonómicas disminuye radicalmente la incidencia de Desórdenes Músculo-Esqueléticos (DME) como el Síndrome del Túnel Carpiano, la Tendinitis de Quervain, la hipercifosis postural y la fatiga visual, garantizando la máxima precisión técnica y la integridad física del trabajador.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Resumen de Riesgos Específicos -->
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <div class="p-2.5 bg-brand-100 text-brand-600 rounded-lg">
+                                <i class="fa-solid fa-desktop text-lg"></i>
+                            </div>
+                            <h4 class="font-bold text-slate-900 text-sm">Postura Mantenida SCADA</h4>
+                        </div>
+                        <p class="text-xs text-slate-600">Genera rigidez cervical, tensión lumbar y fatiga de acomodación ocular por fijación de la mirada.</p>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <div class="p-2.5 bg-teal-100 text-industrial-teal rounded-lg">
+                                <i class="fa-solid fa-screwdriver-wrench text-lg"></i>
+                            </div>
+                            <h4 class="font-bold text-slate-900 text-sm">Motricidad Fina Repetitiva</h4>
+                        </div>
+                        <p class="text-xs text-slate-600">Cableado y ajuste de trimmers que fatigan tendones flexores de muñeca y articulaciones interfalángicas.</p>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center space-x-3 mb-2">
+                            <div class="p-2.5 bg-amber-100 text-industrial-amber rounded-lg">
+                                <i class="fa-solid fa-industry text-lg"></i>
+                            </div>
+                            <h4 class="font-bold text-slate-900 text-sm">Maniobras en Planta</h4>
+                        </div>
+                        <p class="text-xs text-slate-600">Maniobrar válvulas o calibradores en posiciones incómodas (encuclillado, plataformas elevadas o espacios reducidos).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CUERPO DE TRABAJO: SECCIÓN A - GIMNASIA CEREBRAL (4 PAUSAS) -->
+    <section id="gimnasia-cerebral" class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold text-brand-600 uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full border border-brand-200">Sección A - Estimulación Neuro-Cognitiva</span>
+                <h2 class="text-3xl font-heading font-bold text-slate-900 mt-2">4 Pausas Activas de Gimnasia Cerebral</h2>
+                <p class="text-slate-500 text-sm mt-1">Diseñadas para estimular la concentración, la agilidad mental y la integración hemisférica en tareas de control industrial.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- GIMNASIA CEREBRAL 1 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-purple-700 bg-purple-100 px-2.5 py-1 rounded-md">Gimnasia Cerebral #1</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-clock mr-1"></i>3 Minutos</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">1. Test de Stroop Industrial (Atención Selectiva)</h3>
+                        <p class="text-xs text-slate-600 mb-4"><strong>Paso a paso:</strong> Observe la lista de nombres de colores. Diga en voz alta únicamente el <em>COLOR de la tinta</em> con la que está escrita la palabra, evitando leer el texto explícito. Realice 3 rondas completas de izquierda a derecha.</p>
+                        
+                        <!-- Caja interactiva del test -->
+                        <div class="bg-slate-900 text-white p-4 rounded-xl grid grid-cols-3 gap-2 text-center text-xs font-bold font-mono mb-4 shadow-inner">
+                            <span class="text-red-500">AZUL</span>
+                            <span class="text-emerald-400">AMARILLO</span>
+                            <span class="text-amber-400">NEGRO</span>
+                            <span class="text-blue-400">ROJO</span>
+                            <span class="text-purple-400">VERDE</span>
+                            <span class="text-red-400">MORADO</span>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs mb-4">
+                            <div class="bg-white p-2.5 rounded-lg border border-slate-200">
+                                <strong class="text-brand-600 block mb-0.5">Beneficios:</strong> Inhibe respuestas automáticas y mejora el procesamiento prefrontal para la toma de decisiones críticas en planta.
+                            </div>
+                            <div class="bg-white p-2.5 rounded-lg border border-slate-200">
+                                <strong class="text-brand-600 block mb-0.5">Frecuencia / Tiempo:</strong> 2 veces al día (mitad del turno) / 3 minutos.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contenedores para Adjuntar Imagen y Video -->
+                    <div class="space-y-3 pt-3 border-t border-slate-200 no-print">
+                        <div class="img-zoom-wrap relative rounded-xl overflow-hidden border border-slate-200 shadow-sm group/img" onclick="openLightbox('img-gc-1-main')">
+                            <img id="img-gc-1-main" src="imagenes/gc-1_1.jpg" alt="Evidencia fotográfica" class="w-full h-48 object-cover transition duration-500 group-hover/img:scale-105">
+                            <div class="absolute top-2 right-2 bg-white/90 backdrop-blur px-2.5 py-1 rounded-full text-[10px] font-bold text-slate-700 shadow-sm flex items-center pointer-events-none">
+                                <i class="fa-solid fa-camera mr-1"></i> Evidencia real
+                            </div>
+                            <button onclick="event.stopPropagation(); openLightbox('img-gc-1-main')" aria-label="Ampliar imagen" class="img-zoom-btn absolute bottom-2 right-2 bg-black/60 hover:bg-black/80 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+
+                        <div class="w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-900">
+                            <video controls playsinline preload="metadata" class="w-full max-h-56" src="videos/gc-1.mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GIMNASIA CEREBRAL 2 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-purple-700 bg-purple-100 px-2.5 py-1 rounded-md">Gimnasia Cerebral #2</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-clock mr-1"></i>2 Minutos</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">2. Coordinación Bimanual (Dedo-Pulgar Intercalado)</h3>
+                        <p class="text-xs text-slate-600 mb-4"><strong>Paso a paso:</strong> Con la mano derecha toque la yema de cada dedo con el pulgar iniciando desde el índice hasta el meñique. Al mismo tiempo, con la mano izquierda realice la secuencia inversa (del meñique al índice). Intercambie ritmos de forma coordinada.</p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs mb-4">
+                            <div class="bg-white p-2.5 rounded-lg border border-slate-200">
+                                <strong class="text-brand-600 block mb-0.5">Beneficios:</strong> Despierta la motricidad fina bimanual indispensable para tareas de soldadura de precisión y conexionado en tableros de control.
+                            </div>
+                            <div class="bg-white p-2.5 rounded-lg border border-slate-200">
+                                <strong class="text-brand-600 block mb-0.5">Frecuencia / Tiempo:</strong> Al inicio de labores de cableado / 2 minutos.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contenedores para Adjuntar Imagen y Video -->
+                    <div class="space-y-3 pt-3 border-t border-slate-200 no-print">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-center text-xs text-slate-400 italic">
+                            Sin registro fotográfico disponible para este punto.
+                        </div>
+
+                        <div class="w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-900">
+                            <video controls playsinline preload="metadata" class="w-full max-h-56" src="videos/gc-2.mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GIMNASIA CEREBRAL 3 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-purple-700 bg-purple-100 px-2.5 py-1 rounded-md">Gimnasia Cerebral #3</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-clock mr-1"></i>3 Minutos</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">3. Rastreo Visual y Búsqueda de Código Único</h3>
+                        <p class="text-xs text-slate-600 mb-4"><strong>Paso a paso:</strong> Analice el bloque numérico a continuación. Encuentre en el menor tiempo posible (menos de 10 segundos) el único código que no tiene pareja repetida dentro del conjunto.</p>
+
+                        <div class="bg-slate-200 p-3 rounded-xl text-center font-mono font-bold text-slate-800 text-sm mb-4 border border-slate-300">
+                            47895 &nbsp; 96546 &nbsp; 80170 &nbsp; <span class="text-brand-600 underline">32381</span> &nbsp; 47895 &nbsp; 80170 &nbsp; 96546
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs mb-4">
+                            <div class="bg-white p-2.5 rounded-lg border border-slate-200">
+                                <strong class="text-brand-600 block mb-0.5">Beneficios:</strong> Agiliza el escaneo de patrones en planos P&amp;ID, esquemas eléctricos y monitores de alarmas SCADA.
+                            </div>
+                            <div class="bg-white p-2.5 rounded-lg border border-slate-200">
+                                <strong class="text-brand-600 block mb-0.5">Frecuencia / Tiempo:</strong> 1 vez durante la jornada / 3 minutos.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contenedores para Adjuntar Imagen y Video -->
+                    <div class="space-y-3 pt-3 border-t border-slate-200 no-print">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-center text-xs text-slate-400 italic">
+                            Sin registro fotográfico disponible para este punto.
+                        </div>
+
+                        <div class="w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-900">
+                            <video controls playsinline preload="metadata" class="w-full max-h-56" src="videos/gc-3.mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GIMNASIA CEREBRAL 4 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-purple-700 bg-purple-100 px-2.5 py-1 rounded-md">Gimnasia Cerebral #4</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-clock mr-1"></i>3 Minutos</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">4. Patrón Cruzado Hemisférico (Codo a Rodilla Opuesta)</h3>
+                        <p class="text-xs text-slate-600 mb-4"><strong>Paso a paso:</strong> De pie, toque la rodilla derecha levantada con su codo izquierdo. Luego, toque la rodilla izquierda con el codo derecho. Realice el movimiento rítmicamente coordinando con la respiración inhalando al subir y exhalando al bajar.</p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs mb-4">
+                            <div class="bg-white p-2.5 rounded-lg border border-slate-200">
+                                <strong class="text-brand-600 block mb-0.5">Beneficios:</strong> Conecta ambos hemisferios cerebrales mediante el cuerpo calloso, reduciendo el letargo mental y elevando la energía.
+                            </div>
+                            <div class="bg-white p-2.5 rounded-lg border border-slate-200">
+                                <strong class="text-brand-600 block mb-0.5">Frecuencia / Tiempo:</strong> 2 veces al día (mañana y tarde) / 3 minutos (15 repeticiones).
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contenedores para Adjuntar Imagen y Video -->
+                    <div class="space-y-3 pt-3 border-t border-slate-200 no-print">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-center text-xs text-slate-400 italic">
+                            Sin registro fotográfico disponible para este punto.
+                        </div>
+
+                        <div class="w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-900">
+                            <video controls playsinline preload="metadata" class="w-full max-h-56" src="videos/gc-4.mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CUERPO DE TRABAJO: SECCIÓN B - 10 PAUSAS ACTIVAS FÍSICAS -->
+    <section id="pausas-activas" class="py-16 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold text-brand-600 uppercase tracking-widest bg-brand-100 px-3 py-1 rounded-full border border-brand-200">Sección B - Rutinas Biomecánicas</span>
+                <h2 class="text-3xl font-heading font-bold text-slate-900 mt-2">10 Pausas Activas para el Instrumentador Industrial</h2>
+                <p class="text-slate-500 text-sm mt-1">Gimnasia laboral orientada a liberar la tensión muscular causada por el cableado, calibración y monitoreo.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+
+                <!-- PAUSA ACTIVA 1 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition card-glow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-brand-700 bg-brand-100 px-2.5 py-1 rounded-md">Pausa Activa #1</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-stopwatch mr-1"></i>15 Segundos por mano</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">1. Estiramiento Flexo-Extensor de Muñeca y Dedos</h3>
+                        <p class="text-xs text-slate-600 mb-3">
+                            <strong>Paso a paso:</strong> Extienda el brazo hacia adelante a la altura del hombro con la palma hacia arriba. Con la mano contraria, tome todos los dedos (incluido el pulgar) y ejerza una presión suave hacia atrás sosteniendo la posición. Repita invirtiendo la palma hacia abajo.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs mb-4 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                            <div><strong class="text-slate-900 block">Beneficios:</strong> Previene el Síndrome del Túnel Carpiano y la tendinitis por el uso continuo de destornilladores y perilleros.</div>
+                            <div><strong class="text-slate-900 block">Frecuencia:</strong> Cada 2 horas durante cableado de borneras.</div>
+                            <div><strong class="text-slate-900 block">Espacio:</strong> Taller o banco de pruebas.</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 pt-3 border-t border-slate-100 no-print">
+                        <div class="img-zoom-wrap relative rounded-xl overflow-hidden border border-slate-200 shadow-sm group/img" onclick="openLightbox('img-pa-1-main')">
+                            <img id="img-pa-1-main" src="imagenes/pa-1_1.jpg" alt="Evidencia fotográfica" class="w-full h-48 object-cover transition duration-500 group-hover/img:scale-105">
+                            <div class="absolute top-2 right-2 bg-white/90 backdrop-blur px-2.5 py-1 rounded-full text-[10px] font-bold text-slate-700 shadow-sm flex items-center pointer-events-none">
+                                <i class="fa-solid fa-camera mr-1"></i> Evidencia real
+                            </div>
+                            <button onclick="event.stopPropagation(); openLightbox('img-pa-1-main')" aria-label="Ampliar imagen" class="img-zoom-btn absolute bottom-2 right-2 bg-black/60 hover:bg-black/80 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 mt-2">
+                            <img src="imagenes/pa-1_1.jpg" alt="Miniatura 1" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pa-1-main', 'imagenes/pa-1_1.jpg')"><img src="imagenes/pa-1_2.jpg" alt="Miniatura 2" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pa-1-main', 'imagenes/pa-1_2.jpg')">
+                        </div>
+                        <div class="w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-900">
+                            <video controls playsinline preload="metadata" class="w-full max-h-56" src="videos/pa-1.mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAUSA ACTIVA 2 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition card-glow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-brand-700 bg-brand-100 px-2.5 py-1 rounded-md">Pausa Activa #2</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-stopwatch mr-1"></i>15 Segundos por lado</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">2. Descompresión Cervical e Inclinación Lateral</h3>
+                        <p class="text-xs text-slate-600 mb-3">
+                            <strong>Paso a paso:</strong> Incline suavemente la cabeza llevando la oreja hacia el hombro derecho, apoyando sutilmente la mano del mismo lado sobre la cabeza sin ejercer fuerza brusca. Mantenga los hombros abajo y relajados. Cambie al lado izquierdo.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs mb-4 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                            <div><strong class="text-slate-900 block">Beneficios:</strong> Alivia la tensión del trapecio superior acumulada al mirar esquemas o monitores en posición fija.</div>
+                            <div><strong class="text-slate-900 block">Frecuencia:</strong> 3 veces al día.</div>
+                            <div><strong class="text-slate-900 block">Espacio:</strong> Sala de control o de pie en campo.</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 pt-3 border-t border-slate-100 no-print">
+                        <div class="img-zoom-wrap relative rounded-xl overflow-hidden border border-slate-200 shadow-sm group/img" onclick="openLightbox('img-pa-2-main')">
+                            <img id="img-pa-2-main" src="imagenes/pa-2_1.jpg" alt="Evidencia fotográfica" class="w-full h-48 object-cover transition duration-500 group-hover/img:scale-105">
+                            <div class="absolute top-2 right-2 bg-white/90 backdrop-blur px-2.5 py-1 rounded-full text-[10px] font-bold text-slate-700 shadow-sm flex items-center pointer-events-none">
+                                <i class="fa-solid fa-camera mr-1"></i> Evidencia real
+                            </div>
+                            <button onclick="event.stopPropagation(); openLightbox('img-pa-2-main')" aria-label="Ampliar imagen" class="img-zoom-btn absolute bottom-2 right-2 bg-black/60 hover:bg-black/80 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 mt-2">
+                            <img src="imagenes/pa-2_1.jpg" alt="Miniatura 1" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pa-2-main', 'imagenes/pa-2_1.jpg')"><img src="imagenes/pa-2_2.jpg" alt="Miniatura 2" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pa-2-main', 'imagenes/pa-2_2.jpg')">
+                        </div>
+                        <div class="w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-900">
+                            <video controls playsinline preload="metadata" class="w-full max-h-56" src="videos/pa-2.mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAUSA ACTIVA 3 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition card-glow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-brand-700 bg-brand-100 px-2.5 py-1 rounded-md">Pausa Activa #3</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-stopwatch mr-1"></i>15 Segundos (5 reps)</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">3. Retracción Escapular y Apertura Pectoral</h3>
+                        <p class="text-xs text-slate-600 mb-3">
+                            <strong>Paso a paso:</strong> De pie, entrelace las manos por detrás de la espalda a la altura de la cadera. Extienda suavemente los brazos hacia atrás abriendo el pecho y juntando las escápulas. Mantenga la mirada al frente.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs mb-4 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                            <div><strong class="text-slate-900 block">Beneficios:</strong> Corrije la postura enconchada (hipercifosis) provocada por soldadura fina y ensamblaje de módulos.</div>
+                            <div><strong class="text-slate-900 block">Frecuencia:</strong> Cada 3 horas.</div>
+                            <div><strong class="text-slate-900 block">Espacio:</strong> Taller o área libre.</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 pt-3 border-t border-slate-100 no-print">
+                        <div class="img-zoom-wrap relative rounded-xl overflow-hidden border border-slate-200 shadow-sm group/img" onclick="openLightbox('img-pa-3-main')">
+                            <img id="img-pa-3-main" src="imagenes/pa-3_1.jpg" alt="Evidencia fotográfica" class="w-full h-48 object-cover transition duration-500 group-hover/img:scale-105">
+                            <div class="absolute top-2 right-2 bg-white/90 backdrop-blur px-2.5 py-1 rounded-full text-[10px] font-bold text-slate-700 shadow-sm flex items-center pointer-events-none">
+                                <i class="fa-solid fa-camera mr-1"></i> Evidencia real
+                            </div>
+                            <button onclick="event.stopPropagation(); openLightbox('img-pa-3-main')" aria-label="Ampliar imagen" class="img-zoom-btn absolute bottom-2 right-2 bg-black/60 hover:bg-black/80 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-900">
+                            <video controls playsinline preload="metadata" class="w-full max-h-56" src="videos/pa-3.mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAUSA ACTIVA 4 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition card-glow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-brand-700 bg-brand-100 px-2.5 py-1 rounded-md">Pausa Activa #4</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-stopwatch mr-1"></i>15 Segundos (10 reps)</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">4. Extensión Lumbar De Pie (Alivio Posición SCADA)</h3>
+                        <p class="text-xs text-slate-600 mb-3">
+                            <strong>Paso a paso:</strong> De pie con los pies separados a la anchura de los hombros, ubique las palmas de las manos en la parte baja de la espalda (zona lumbar). Lleve la cadera suavemente hacia adelante y arquee ligeramente el tronco hacia atrás.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs mb-4 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                            <div><strong class="text-slate-900 block">Beneficios:</strong> Reduce la presión intradiscal acumulada tras horas de estar sentado supervisando consolas.</div>
+                            <div><strong class="text-slate-900 block">Frecuencia:</strong> Cada 2 horas.</div>
+                            <div><strong class="text-slate-900 block">Espacio:</strong> Cuarto de Control / Taller.</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 pt-3 border-t border-slate-100 no-print">
+                        <div class="img-zoom-wrap relative rounded-xl overflow-hidden border border-slate-200 shadow-sm group/img" onclick="openLightbox('img-pa-4-main')">
+                            <img id="img-pa-4-main" src="imagenes/pa-4_1.jpg" alt="Evidencia fotográfica" class="w-full h-48 object-cover transition duration-500 group-hover/img:scale-105">
+                            <div class="absolute top-2 right-2 bg-white/90 backdrop-blur px-2.5 py-1 rounded-full text-[10px] font-bold text-slate-700 shadow-sm flex items-center pointer-events-none">
+                                <i class="fa-solid fa-camera mr-1"></i> Evidencia real
+                            </div>
+                            <button onclick="event.stopPropagation(); openLightbox('img-pa-4-main')" aria-label="Ampliar imagen" class="img-zoom-btn absolute bottom-2 right-2 bg-black/60 hover:bg-black/80 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 mt-2">
+                            <img src="imagenes/pa-4_1.jpg" alt="Miniatura 1" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pa-4-main', 'imagenes/pa-4_1.jpg')"><img src="imagenes/pa-4_2.jpg" alt="Miniatura 2" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pa-4-main', 'imagenes/pa-4_2.jpg')"><img src="imagenes/pa-4_3.jpg" alt="Miniatura 3" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pa-4-main', 'imagenes/pa-4_3.jpg')">
+                        </div>
+                        <div class="w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-900">
+                            <video controls playsinline preload="metadata" class="w-full max-h-56" src="videos/pa-4.mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAUSA ACTIVA 5 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition card-glow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-brand-700 bg-brand-100 px-2.5 py-1 rounded-md">Pausa Activa #5</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-stopwatch mr-1"></i>15 Segundos (5 reps)</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">5. Rotación de Hombros y Circunducción</h3>
+                        <p class="text-xs text-slate-600 mb-3">
+                            <strong>Paso a paso:</strong> Coloque la punta de los dedos sobre sus hombros. Ejecute círculos amplios y lentos hacia atrás dirigiéndolos con los codos durante 5 repeticiones, y luego intercambie la dirección hacia adelante.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs mb-4 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                            <div><strong class="text-slate-900 block">Beneficios:</strong> Lubrica la articulación glenohumeral, previniendo contracturas tras sostener multímetros y calibradores.</div>
+                            <div><strong class="text-slate-900 block">Frecuencia:</strong> 2 a 3 veces al día.</div>
+                            <div><strong class="text-slate-900 block">Espacio:</strong> Banco de calibración / Planta.</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 pt-3 border-t border-slate-100 no-print">
+                        <div class="img-zoom-wrap relative rounded-xl overflow-hidden border border-slate-200 shadow-sm group/img" onclick="openLightbox('img-pa-5-main')">
+                            <img id="img-pa-5-main" src="imagenes/pa-5_1.jpg" alt="Evidencia fotográfica" class="w-full h-48 object-cover transition duration-500 group-hover/img:scale-105">
+                            <div class="absolute top-2 right-2 bg-white/90 backdrop-blur px-2.5 py-1 rounded-full text-[10px] font-bold text-slate-700 shadow-sm flex items-center pointer-events-none">
+                                <i class="fa-solid fa-camera mr-1"></i> Evidencia real
+                            </div>
+                            <button onclick="event.stopPropagation(); openLightbox('img-pa-5-main')" aria-label="Ampliar imagen" class="img-zoom-btn absolute bottom-2 right-2 bg-black/60 hover:bg-black/80 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-900">
+                            <video controls playsinline preload="metadata" class="w-full max-h-56" src="videos/pa-5.mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAUSA ACTIVA 6 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition card-glow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-brand-700 bg-brand-100 px-2.5 py-1 rounded-md">Pausa Activa #6</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-stopwatch mr-1"></i>20 Segundos</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">6. Ejercicio Ocular 20-20-20 y Parpadeo Consciente</h3>
+                        <p class="text-xs text-slate-600 mb-3">
+                            <strong>Paso a paso:</strong> Desvíe la mirada de las pantallas SCADA cada 20 minutos y enfoque un punto a 20 pies (6 metros) durante 20 segundos. Acompañe cerrando fuertemente los ojos durante 3 segundos para relajar el músculo ciliar.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs mb-4 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                            <div><strong class="text-slate-900 block">Beneficios:</strong> Evita la sequedad ocular y la fatiga visual por iluminación fluorescente y pantallas de monitoreo.</div>
+                            <div><strong class="text-slate-900 block">Frecuencia:</strong> Cada 20 minutos.</div>
+                            <div><strong class="text-slate-900 block">Espacio:</strong> Consola de control / Computador.</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 pt-3 border-t border-slate-100 no-print">
+                        <div class="img-zoom-wrap relative rounded-xl overflow-hidden border border-slate-200 shadow-sm group/img" onclick="openLightbox('img-pa-6-main')">
+                            <img id="img-pa-6-main" src="imagenes/pa-6_1.jpg" alt="Evidencia fotográfica" class="w-full h-48 object-cover transition duration-500 group-hover/img:scale-105">
+                            <div class="absolute top-2 right-2 bg-white/90 backdrop-blur px-2.5 py-1 rounded-full text-[10px] font-bold text-slate-700 shadow-sm flex items-center pointer-events-none">
+                                <i class="fa-solid fa-camera mr-1"></i> Evidencia real
+                            </div>
+                            <button onclick="event.stopPropagation(); openLightbox('img-pa-6-main')" aria-label="Ampliar imagen" class="img-zoom-btn absolute bottom-2 right-2 bg-black/60 hover:bg-black/80 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 mt-2">
+                            <img src="imagenes/pa-6_1.jpg" alt="Miniatura 1" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pa-6-main', 'imagenes/pa-6_1.jpg')"><img src="imagenes/pa-6_2.jpg" alt="Miniatura 2" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pa-6-main', 'imagenes/pa-6_2.jpg')">
+                        </div>
+                        <div class="w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-900">
+                            <video controls playsinline preload="metadata" class="w-full max-h-56" src="videos/pa-6.mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAUSA ACTIVA 7 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition card-glow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-brand-700 bg-brand-100 px-2.5 py-1 rounded-md">Pausa Activa #7</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-stopwatch mr-1"></i>15 Segundos por pierna</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">7. Estiramiento de Isquiotibiales De Pie</h3>
+                        <p class="text-xs text-slate-600 mb-3">
+                            <strong>Paso a paso:</strong> Dé un paso hacia adelante apoyando el talón con la punta del pie mirando hacia arriba y la pierna recta. Flexione levemente la pierna trasera e incline la cadera hacia adelante manteniendo la espalda recta.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs mb-4 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                            <div><strong class="text-slate-900 block">Beneficios:</strong> Elongación de la cadena posterior de la pierna, mitigando el acortamiento por postura sedente prolongada.</div>
+                            <div><strong class="text-slate-900 block">Frecuencia:</strong> 2 veces al día.</div>
+                            <div><strong class="text-slate-900 block">Espacio:</strong> Pasillos / Taller de mantenimiento.</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 pt-3 border-t border-slate-100 no-print">
+                        <div class="img-zoom-wrap relative rounded-xl overflow-hidden border border-slate-200 shadow-sm group/img" onclick="openLightbox('img-pa-7-main')">
+                            <img id="img-pa-7-main" src="imagenes/pa-7_1.jpg" alt="Evidencia fotográfica" class="w-full h-48 object-cover transition duration-500 group-hover/img:scale-105">
+                            <div class="absolute top-2 right-2 bg-white/90 backdrop-blur px-2.5 py-1 rounded-full text-[10px] font-bold text-slate-700 shadow-sm flex items-center pointer-events-none">
+                                <i class="fa-solid fa-camera mr-1"></i> Evidencia real
+                            </div>
+                            <button onclick="event.stopPropagation(); openLightbox('img-pa-7-main')" aria-label="Ampliar imagen" class="img-zoom-btn absolute bottom-2 right-2 bg-black/60 hover:bg-black/80 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 mt-2">
+                            <img src="imagenes/pa-7_1.jpg" alt="Miniatura 1" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pa-7-main', 'imagenes/pa-7_1.jpg')"><img src="imagenes/pa-7_2.jpg" alt="Miniatura 2" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pa-7-main', 'imagenes/pa-7_2.jpg')">
+                        </div>
+                        <div class="w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-900">
+                            <video controls playsinline preload="metadata" class="w-full max-h-56" src="videos/pa-7.mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAUSA ACTIVA 8 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition card-glow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-brand-700 bg-brand-100 px-2.5 py-1 rounded-md">Pausa Activa #8</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-stopwatch mr-1"></i>15 Segundos (10 reps)</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">8. Elevación de Puntas y Talones (Bomba Muscular)</h3>
+                        <p class="text-xs text-slate-600 mb-3">
+                            <strong>Paso a paso:</strong> De pie, póngase puntas de pie sosteniendo 2 segundos y luego cambie apoyándose sobre los talones levantando las puntas. Alterne este movimiento de balanceo 10 veces continuas.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs mb-4 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                            <div><strong class="text-slate-900 block">Beneficios:</strong> Activa la bomba muscular sóleo-gemelos favoreciendo el retorno venoso de piernas tras extensas jornadas en campo.</div>
+                            <div><strong class="text-slate-900 block">Frecuencia:</strong> 3 veces al día.</div>
+                            <div><strong class="text-slate-900 block">Espacio:</strong> Planta de proceso / Taller.</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 pt-3 border-t border-slate-100 no-print">
+                        <div class="img-zoom-wrap relative rounded-xl overflow-hidden border border-slate-200 shadow-sm group/img" onclick="openLightbox('img-pa-8-main')">
+                            <img id="img-pa-8-main" src="imagenes/pa-8_1.jpg" alt="Evidencia fotográfica" class="w-full h-48 object-cover transition duration-500 group-hover/img:scale-105">
+                            <div class="absolute top-2 right-2 bg-white/90 backdrop-blur px-2.5 py-1 rounded-full text-[10px] font-bold text-slate-700 shadow-sm flex items-center pointer-events-none">
+                                <i class="fa-solid fa-camera mr-1"></i> Evidencia real
+                            </div>
+                            <button onclick="event.stopPropagation(); openLightbox('img-pa-8-main')" aria-label="Ampliar imagen" class="img-zoom-btn absolute bottom-2 right-2 bg-black/60 hover:bg-black/80 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 mt-2">
+                            <img src="imagenes/pa-8_1.jpg" alt="Miniatura 1" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pa-8-main', 'imagenes/pa-8_1.jpg')"><img src="imagenes/pa-8_2.jpg" alt="Miniatura 2" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pa-8-main', 'imagenes/pa-8_2.jpg')">
+                        </div>
+                        <div class="w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-900">
+                            <video controls playsinline preload="metadata" class="w-full max-h-56" src="videos/pa-8.mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAUSA ACTIVA 9 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition card-glow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-brand-700 bg-brand-100 px-2.5 py-1 rounded-md">Pausa Activa #9</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-stopwatch mr-1"></i>15 Segundos por lado</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">9. Torsión Suave de Tronco y Columna</h3>
+                        <p class="text-xs text-slate-600 mb-3">
+                            <strong>Paso a paso:</strong> Sentado en la silla de control o de pie, tome el espaldar o la cadera con ambas manos y rote despacio el tronco hacia la derecha manteniendo la pelvis fija. Sostenga y gire suavemente al lado opuesto.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs mb-4 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                            <div><strong class="text-slate-900 block">Beneficios:</strong> Flexibiliza la columna vertebral y libera la rigidez del área dorsolumbar al trabajar en espacios reducidos.</div>
+                            <div><strong class="text-slate-900 block">Frecuencia:</strong> 2 veces al día.</div>
+                            <div><strong class="text-slate-900 block">Espacio:</strong> Sala de control / Campo.</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 pt-3 border-t border-slate-100 no-print">
+                        <div class="img-zoom-wrap relative rounded-xl overflow-hidden border border-slate-200 shadow-sm group/img" onclick="openLightbox('img-pa-9-main')">
+                            <img id="img-pa-9-main" src="imagenes/pa-9_1.jpg" alt="Evidencia fotográfica" class="w-full h-48 object-cover transition duration-500 group-hover/img:scale-105">
+                            <div class="absolute top-2 right-2 bg-white/90 backdrop-blur px-2.5 py-1 rounded-full text-[10px] font-bold text-slate-700 shadow-sm flex items-center pointer-events-none">
+                                <i class="fa-solid fa-camera mr-1"></i> Evidencia real
+                            </div>
+                            <button onclick="event.stopPropagation(); openLightbox('img-pa-9-main')" aria-label="Ampliar imagen" class="img-zoom-btn absolute bottom-2 right-2 bg-black/60 hover:bg-black/80 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 mt-2">
+                            <img src="imagenes/pa-9_1.jpg" alt="Miniatura 1" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pa-9-main', 'imagenes/pa-9_1.jpg')"><img src="imagenes/pa-9_2.jpg" alt="Miniatura 2" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pa-9-main', 'imagenes/pa-9_2.jpg')">
+                        </div>
+                        <div class="w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-900">
+                            <video controls playsinline preload="metadata" class="w-full max-h-56" src="videos/pa-9.mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAUSA ACTIVA 10 -->
+                <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md transition card-glow flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-brand-700 bg-brand-100 px-2.5 py-1 rounded-md">Pausa Activa #10</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-stopwatch mr-1"></i>15 Segundos (10 reps)</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">10. Oposición de Pulgar y Apertura de Dedos</h3>
+                        <p class="text-xs text-slate-600 mb-3">
+                            <strong>Paso a paso:</strong> Abra las manos separando todos los dedos con máxima extensión durante 5 segundos. Luego, forme un puño cerrado fuerte durante otros 5 segundos. Complete con giros suaves de pulgar en sentido horario.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs mb-4 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                            <div><strong class="text-slate-900 block">Beneficios:</strong> Restablece la circulación en los músculos interóseos fatigados tras manipular piezas milimétricas.</div>
+                            <div><strong class="text-slate-900 block">Frecuencia:</strong> Cada hora de trabajo en banco.</div>
+                            <div><strong class="text-slate-900 block">Espacio:</strong> Banco de soldadura / Calibración.</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 pt-3 border-t border-slate-100 no-print">
+                        <div class="img-zoom-wrap relative rounded-xl overflow-hidden border border-slate-200 shadow-sm group/img" onclick="openLightbox('img-pa-10-main')">
+                            <img id="img-pa-10-main" src="imagenes/pa-10_1.jpg" alt="Evidencia fotográfica" class="w-full h-48 object-cover transition duration-500 group-hover/img:scale-105">
+                            <div class="absolute top-2 right-2 bg-white/90 backdrop-blur px-2.5 py-1 rounded-full text-[10px] font-bold text-slate-700 shadow-sm flex items-center pointer-events-none">
+                                <i class="fa-solid fa-camera mr-1"></i> Evidencia real
+                            </div>
+                            <button onclick="event.stopPropagation(); openLightbox('img-pa-10-main')" aria-label="Ampliar imagen" class="img-zoom-btn absolute bottom-2 right-2 bg-black/60 hover:bg-black/80 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 mt-2">
+                            <img src="imagenes/pa-10_1.jpg" alt="Miniatura 1" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pa-10-main', 'imagenes/pa-10_1.jpg')"><img src="imagenes/pa-10_2.jpg" alt="Miniatura 2" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pa-10-main', 'imagenes/pa-10_2.jpg')"><img src="imagenes/pa-10_3.jpg" alt="Miniatura 3" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pa-10-main', 'imagenes/pa-10_3.jpg')">
+                        </div>
+                        <div class="w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-900">
+                            <video controls playsinline preload="metadata" class="w-full max-h-56" src="videos/pa-10.mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CUERPO DE TRABAJO: SECCIÓN C - 10 POSTURAS ERGONÓMICAS ADECUADAS -->
+    <section id="posturas-ergonomicas" class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="text-xs font-bold text-industrial-teal uppercase tracking-widest bg-teal-50 px-3 py-1 rounded-full border border-teal-200">Sección C - Biomecánica Ocupacional</span>
+                <h2 class="text-3xl font-heading font-bold text-slate-900 mt-2">10 Posturas Ergonómicas en Instrumentación Industrial</h2>
+                <p class="text-slate-500 text-sm mt-1">Alineación corporal recomendada para consolas, tableros PLC, levantamiento de cargas y maniobras de campo.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+
+                <!-- POSTURA ERGONÓMICA 1 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-teal-800 bg-teal-100 px-2.5 py-1 rounded-md">Postura Ergonómica #1</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-chair mr-1"></i>Consola SCADA</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">1. Posición Sedente Ergonómica en Consola SCADA / HMI</h3>
+                        <p class="text-xs text-slate-600 mb-3">
+                            <strong>Paso a paso:</strong> Ajuste la altura de la silla para que los pies queden apoyados planos en el suelo. Mantenga la espalda completamente apoyada contra el espaldar lumbar, los codos flexionados a $90^\circ$ sobre el escritorio y la parte superior de la pantalla alineada a la altura de los ojos.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs mb-4 bg-white p-3 rounded-xl border border-slate-200">
+                            <div><strong class="text-teal-700 block">Beneficios:</strong> Evita la hernia discal lumbar y la tensión trapezoide.</div>
+                            <div><strong class="text-teal-700 block">Frecuencia:</strong> Permanente durante el turno de supervisión.</div>
+                            <div><strong class="text-teal-700 block">Tiempo / Aplicación:</strong> Bloques de 50 min con 10 min de pausa.</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 pt-3 border-t border-slate-200 no-print">
+                        <div class="img-zoom-wrap relative rounded-xl overflow-hidden border border-slate-200 shadow-sm group/img" onclick="openLightbox('img-pe-1-main')">
+                            <img id="img-pe-1-main" src="imagenes/pe-1_1.jpg" alt="Evidencia fotográfica" class="w-full h-48 object-cover transition duration-500 group-hover/img:scale-105">
+                            <div class="absolute top-2 right-2 bg-white/90 backdrop-blur px-2.5 py-1 rounded-full text-[10px] font-bold text-slate-700 shadow-sm flex items-center pointer-events-none">
+                                <i class="fa-solid fa-camera mr-1"></i> Evidencia real
+                            </div>
+                            <button onclick="event.stopPropagation(); openLightbox('img-pe-1-main')" aria-label="Ampliar imagen" class="img-zoom-btn absolute bottom-2 right-2 bg-black/60 hover:bg-black/80 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-900">
+                            <video controls playsinline preload="metadata" class="w-full max-h-56" src="videos/pe-1.mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- POSTURA ERGONÓMICA 2 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-teal-800 bg-teal-100 px-2.5 py-1 rounded-md">Postura Ergonómica #2</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-gears mr-1"></i>Tableros de Control</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">2. Alineación para Cableado de Gabinetes y Tableros PLC</h3>
+                        <p class="text-xs text-slate-600 mb-3">
+                            <strong>Paso a paso:</strong> Mantenga una distancia de 30 a 40 cm frente a la bornera. Si la bornera está baja, use un taburete neumático en vez de encorvar la columna. Si está a nivel del pecho, mantenga los hombros abajo y apoye el antebrazo en un soporte rígido.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs mb-4 bg-white p-3 rounded-xl border border-slate-200">
+                            <div><strong class="text-teal-700 block">Beneficios:</strong> Elimina la hipercifosis dorsal sostenida y el agotamiento muscular de hombros.</div>
+                            <div><strong class="text-teal-700 block">Frecuencia:</strong> Cada vez que realice pelado o peinado de cables.</div>
+                            <div><strong class="text-teal-700 block">Tiempo / Aplicación:</strong> Cambios de postura cada 20 minutos.</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 pt-3 border-t border-slate-200 no-print">
+                        <div class="img-zoom-wrap relative rounded-xl overflow-hidden border border-slate-200 shadow-sm group/img" onclick="openLightbox('img-pe-2-main')">
+                            <img id="img-pe-2-main" src="imagenes/pe-2_1.jpg" alt="Evidencia fotográfica" class="w-full h-48 object-cover transition duration-500 group-hover/img:scale-105">
+                            <div class="absolute top-2 right-2 bg-white/90 backdrop-blur px-2.5 py-1 rounded-full text-[10px] font-bold text-slate-700 shadow-sm flex items-center pointer-events-none">
+                                <i class="fa-solid fa-camera mr-1"></i> Evidencia real
+                            </div>
+                            <button onclick="event.stopPropagation(); openLightbox('img-pe-2-main')" aria-label="Ampliar imagen" class="img-zoom-btn absolute bottom-2 right-2 bg-black/60 hover:bg-black/80 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-900">
+                            <video controls playsinline preload="metadata" class="w-full max-h-56" src="videos/pe-2.mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- POSTURA ERGONÓMICA 3 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-teal-800 bg-teal-100 px-2.5 py-1 rounded-md">Postura Ergonómica #3</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-microchip mr-1"></i>Banco de Pruebas</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">3. Ergonomía en Banco de Prueba y Calibración Fina</h3>
+                        <p class="text-xs text-slate-600 mb-3">
+                            <strong>Paso a paso:</strong> Ajuste la mesa de trabajo a una altura entre 90 y 105 cm (altura de codos). Utilice una lámpara lupa articulada para evitar inclinarse sobre las tarjetas electrónicas. Apoye las muñecas en almohadillas o bordes redondeados.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs mb-4 bg-white p-3 rounded-xl border border-slate-200">
+                            <div><strong class="text-teal-700 block">Beneficios:</strong> Evita la fatiga cervical por flexión prolongada y optimiza la precisión en soldadura SMD.</div>
+                            <div><strong class="text-teal-700 block">Frecuencia:</strong> Trabajos continuos de calibración de multímetros o transmisores.</div>
+                            <div><strong class="text-teal-700 block">Tiempo / Aplicación:</strong> Pausas de micro-descanso cada 30 min.</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 pt-3 border-t border-slate-200 no-print">
+                        <div class="img-zoom-wrap relative rounded-xl overflow-hidden border border-slate-200 shadow-sm group/img" onclick="openLightbox('img-pe-3-main')">
+                            <img id="img-pe-3-main" src="imagenes/pe-3_1.jpg" alt="Evidencia fotográfica" class="w-full h-48 object-cover transition duration-500 group-hover/img:scale-105">
+                            <div class="absolute top-2 right-2 bg-white/90 backdrop-blur px-2.5 py-1 rounded-full text-[10px] font-bold text-slate-700 shadow-sm flex items-center pointer-events-none">
+                                <i class="fa-solid fa-camera mr-1"></i> Evidencia real
+                            </div>
+                            <button onclick="event.stopPropagation(); openLightbox('img-pe-3-main')" aria-label="Ampliar imagen" class="img-zoom-btn absolute bottom-2 right-2 bg-black/60 hover:bg-black/80 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-900">
+                            <video controls playsinline preload="metadata" class="w-full max-h-56" src="videos/pe-3.mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- POSTURA ERGONÓMICA 4 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-teal-800 bg-teal-100 px-2.5 py-1 rounded-md">Postura Ergonómica #4</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-box-open mr-1"></i>Manejo de Cargas</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">4. Levantamiento Seguro de Válvulas de Control y Flujómetros</h3>
+                        <p class="text-xs text-slate-600 mb-3">
+                            <strong>Paso a paso:</strong> Posiciónese pegado a la carga con los pies separados a la anchura de caderas. Flexione las rodillas manteniendo la columna neutra y recta. Abrace el equipo pesado pegado al pecho y levántelo ejerciendo la fuerza con las piernas.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs mb-4 bg-white p-3 rounded-xl border border-slate-200">
+                            <div><strong class="text-teal-700 block">Beneficios:</strong> Previene lumbalgias agudas, hernias discales y desgarros musculares en espalda baja.</div>
+                            <div><strong class="text-teal-700 block">Frecuencia:</strong> Siempre que transporte cargas superiores a 12 kg (solicitar ayuda &gt; 25 kg).</div>
+                            <div><strong class="text-teal-700 block">Tiempo / Aplicación:</strong> Maniobra biomecánica puntual.</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 pt-3 border-t border-slate-200 no-print">
+                        <div class="img-zoom-wrap relative rounded-xl overflow-hidden border border-slate-200 shadow-sm group/img" onclick="openLightbox('img-pe-4-main')">
+                            <img id="img-pe-4-main" src="imagenes/pe-4_1.jpg" alt="Evidencia fotográfica" class="w-full h-48 object-cover transition duration-500 group-hover/img:scale-105">
+                            <div class="absolute top-2 right-2 bg-white/90 backdrop-blur px-2.5 py-1 rounded-full text-[10px] font-bold text-slate-700 shadow-sm flex items-center pointer-events-none">
+                                <i class="fa-solid fa-camera mr-1"></i> Evidencia real
+                            </div>
+                            <button onclick="event.stopPropagation(); openLightbox('img-pe-4-main')" aria-label="Ampliar imagen" class="img-zoom-btn absolute bottom-2 right-2 bg-black/60 hover:bg-black/80 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 mt-2">
+                            <img src="imagenes/pe-4_1.jpg" alt="Miniatura 1" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pe-4-main', 'imagenes/pe-4_1.jpg')"><img src="imagenes/pe-4_2.jpg" alt="Miniatura 2" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pe-4-main', 'imagenes/pe-4_2.jpg')">
+                        </div>
+                        <div class="w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-900">
+                            <video controls playsinline preload="metadata" class="w-full max-h-56" src="videos/pe-4.mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- POSTURA ERGONÓMICA 5 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-teal-800 bg-teal-100 px-2.5 py-1 rounded-md">Postura Ergonómica #5</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-screwdriver mr-1"></i>Cajas de Campo</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">5. Encuclillado Técnico en Zonas Bajas / Armarios de Campo</h3>
+                        <p class="text-xs text-slate-600 mb-3">
+                            <strong>Paso a paso:</strong> En lugar de doblar el tronco en ángulo de $90^\circ$, apoye una rodilla sobre un tapiz protector o colóquese en posición de semi-estocada con un pie adelante y la otra rodilla en el piso. Mantenga la columna erguida.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs mb-4 bg-white p-3 rounded-xl border border-slate-200">
+                            <div><strong class="text-teal-700 block">Beneficios:</strong> Evita la sobrepresión lumbar y la compresión nerviosa en la fosa poplítea.</div>
+                            <div><strong class="text-teal-700 block">Frecuencia:</strong> Intervenciones en cajas de conexiones a menos de 50 cm del piso.</div>
+                            <div><strong class="text-teal-700 block">Tiempo / Aplicación:</strong> Alternar rodillas cada 10 minutos.</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 pt-3 border-t border-slate-200 no-print">
+                        <div class="img-zoom-wrap relative rounded-xl overflow-hidden border border-slate-200 shadow-sm group/img" onclick="openLightbox('img-pe-5-main')">
+                            <img id="img-pe-5-main" src="imagenes/pe-5_1.jpg" alt="Evidencia fotográfica" class="w-full h-48 object-cover transition duration-500 group-hover/img:scale-105">
+                            <div class="absolute top-2 right-2 bg-white/90 backdrop-blur px-2.5 py-1 rounded-full text-[10px] font-bold text-slate-700 shadow-sm flex items-center pointer-events-none">
+                                <i class="fa-solid fa-camera mr-1"></i> Evidencia real
+                            </div>
+                            <button onclick="event.stopPropagation(); openLightbox('img-pe-5-main')" aria-label="Ampliar imagen" class="img-zoom-btn absolute bottom-2 right-2 bg-black/60 hover:bg-black/80 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-900">
+                            <video controls playsinline preload="metadata" class="w-full max-h-56" src="videos/pe-5.mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- POSTURA ERGONÓMICA 6 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-teal-800 bg-teal-100 px-2.5 py-1 rounded-md">Postura Ergonómica #6</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-stairs mr-1"></i>Trabajo en Alturas</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">6. Postura Biomecánica en Escaleras Marinas y Estructuras</h3>
+                        <p class="text-xs text-slate-600 mb-3">
+                            <strong>Paso a paso:</strong> Mantenga siempre la regla de los 3 puntos de apoyo (dos manos y un pie, o dos pies y una mano). Al calibrar un transmisor elevado, instale el arnés en la línea de vida y trabaje dentro de su centro de gravedad sin estirarse en voladizo.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs mb-4 bg-white p-3 rounded-xl border border-slate-200">
+                            <div><strong class="text-teal-700 block">Beneficios:</strong> Previene caídas a distinto nivel y sobreesfuerzo de articulaciones de hombro.</div>
+                            <div><strong class="text-teal-700 block">Frecuencia:</strong> Acceso a tanques de almacenamiento y torres de destilación.</div>
+                            <div><strong class="text-teal-700 block">Tiempo / Aplicación:</strong> Inspección o calibración en altura.</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 pt-3 border-t border-slate-200 no-print">
+                        <div class="img-zoom-wrap relative rounded-xl overflow-hidden border border-slate-200 shadow-sm group/img" onclick="openLightbox('img-pe-6-main')">
+                            <img id="img-pe-6-main" src="imagenes/pe-6_1.jpg" alt="Evidencia fotográfica" class="w-full h-48 object-cover transition duration-500 group-hover/img:scale-105">
+                            <div class="absolute top-2 right-2 bg-white/90 backdrop-blur px-2.5 py-1 rounded-full text-[10px] font-bold text-slate-700 shadow-sm flex items-center pointer-events-none">
+                                <i class="fa-solid fa-camera mr-1"></i> Evidencia real
+                            </div>
+                            <button onclick="event.stopPropagation(); openLightbox('img-pe-6-main')" aria-label="Ampliar imagen" class="img-zoom-btn absolute bottom-2 right-2 bg-black/60 hover:bg-black/80 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-900">
+                            <video controls playsinline preload="metadata" class="w-full max-h-56" src="videos/pe-6.mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- POSTURA ERGONÓMICA 7 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-teal-800 bg-teal-100 px-2.5 py-1 rounded-md">Postura Ergonómica #7</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-wrench mr-1"></i>Uso de Herramientas</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">7. Postura Neutra en el Uso de Herramientas de Mano</h3>
+                        <p class="text-xs text-slate-600 mb-3">
+                            <strong>Paso a paso:</strong> Al operar alicates, pelacables o llaves de ajuste, mantenga la muñeca perfectamente recta en posición neutra (evitando la desviación cubital o radial). Seleccione herramientas con mangos ergonómicos antideslizantes de buen agarre.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs mb-4 bg-white p-3 rounded-xl border border-slate-200">
+                            <div><strong class="text-teal-700 block">Beneficios:</strong> Evita la compresión del nervio mediano y la tenosinovitis de De Quervain.</div>
+                            <div><strong class="text-teal-700 block">Frecuencia:</strong> Continuo durante mantenimiento mecánico/eléctrico.</div>
+                            <div><strong class="text-teal-700 block">Tiempo / Aplicación:</strong> Descansos breves de 10 s entre ajustes.</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 pt-3 border-t border-slate-200 no-print">
+                        <div class="img-zoom-wrap relative rounded-xl overflow-hidden border border-slate-200 shadow-sm group/img" onclick="openLightbox('img-pe-7-main')">
+                            <img id="img-pe-7-main" src="imagenes/pe-7_1.jpg" alt="Evidencia fotográfica" class="w-full h-48 object-cover transition duration-500 group-hover/img:scale-105">
+                            <div class="absolute top-2 right-2 bg-white/90 backdrop-blur px-2.5 py-1 rounded-full text-[10px] font-bold text-slate-700 shadow-sm flex items-center pointer-events-none">
+                                <i class="fa-solid fa-camera mr-1"></i> Evidencia real
+                            </div>
+                            <button onclick="event.stopPropagation(); openLightbox('img-pe-7-main')" aria-label="Ampliar imagen" class="img-zoom-btn absolute bottom-2 right-2 bg-black/60 hover:bg-black/80 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 mt-2">
+                            <img src="imagenes/pe-7_1.jpg" alt="Miniatura 1" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pe-7-main', 'imagenes/pe-7_1.jpg')"><img src="imagenes/pe-7_2.jpg" alt="Miniatura 2" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pe-7-main', 'imagenes/pe-7_2.jpg')">
+                        </div>
+                        <div class="w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-900">
+                            <video controls playsinline preload="metadata" class="w-full max-h-56" src="videos/pe-7.mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- POSTURA ERGONÓMICA 8 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-teal-800 bg-teal-100 px-2.5 py-1 rounded-md">Postura Ergonómica #8</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-person-walking-luggage mr-1"></i>Trabajo de Pie</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">8. Bipedestación Prolongada con Alternancia de Apoyo</h3>
+                        <p class="text-xs text-slate-600 mb-3">
+                            <strong>Paso a paso:</strong> Al realizar recorridos o calibración de campo de pie, distribuya el peso de manera uniforme entre ambas piernas. Coloque alternadamente un pie sobre un reposapiés elevador de 15 cm cambiando cada 15 minutos para relajar la zona lumbar.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs mb-4 bg-white p-3 rounded-xl border border-slate-200">
+                            <div><strong class="text-teal-700 block">Beneficios:</strong> Disminuye la sobrecarga de rodillas y favorece la circulación venosa.</div>
+                            <div><strong class="text-teal-700 block">Frecuencia:</strong> Turnos de campo o inspección técnica.</div>
+                            <div><strong class="text-teal-700 block">Tiempo / Aplicación:</strong> Cambios de pie cada 15 minutos.</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 pt-3 border-t border-slate-200 no-print">
+                        <div class="img-zoom-wrap relative rounded-xl overflow-hidden border border-slate-200 shadow-sm group/img" onclick="openLightbox('img-pe-8-main')">
+                            <img id="img-pe-8-main" src="imagenes/pe-8_1.jpg" alt="Evidencia fotográfica" class="w-full h-48 object-cover transition duration-500 group-hover/img:scale-105">
+                            <div class="absolute top-2 right-2 bg-white/90 backdrop-blur px-2.5 py-1 rounded-full text-[10px] font-bold text-slate-700 shadow-sm flex items-center pointer-events-none">
+                                <i class="fa-solid fa-camera mr-1"></i> Evidencia real
+                            </div>
+                            <button onclick="event.stopPropagation(); openLightbox('img-pe-8-main')" aria-label="Ampliar imagen" class="img-zoom-btn absolute bottom-2 right-2 bg-black/60 hover:bg-black/80 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 mt-2">
+                            <img src="imagenes/pe-8_1.jpg" alt="Miniatura 1" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pe-8-main', 'imagenes/pe-8_1.jpg')"><img src="imagenes/pe-8_2.jpg" alt="Miniatura 2" class="w-full h-14 object-cover rounded-lg cursor-pointer border-2 border-transparent hover:border-brand-500 transition" onclick="setMainImage('img-pe-8-main', 'imagenes/pe-8_2.jpg')">
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-center text-xs text-slate-400 italic">
+                            Sin registro de video disponible para este punto.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- POSTURA ERGONÓMICA 9 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-teal-800 bg-teal-100 px-2.5 py-1 rounded-md">Postura Ergonómica #9</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-gauge-high mr-1"></i>Inspección de Campo</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">9. Inspección Visual Directa de Manómetros e Indicadores</h3>
+                        <p class="text-xs text-slate-600 mb-3">
+                            <strong>Paso a paso:</strong> Posiciónese de frente a la carátula del instrumento a la altura exacta del dial para evitar el error de paralaje y la sobreextensión o flexión forzada del cuello. Si el indicador está alto, use una plataforma estable certificada.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs mb-4 bg-white p-3 rounded-xl border border-slate-200">
+                            <div><strong class="text-teal-700 block">Beneficios:</strong> Evita tortícolis, tensión suboccipital y lecturas erróneas de variables.</div>
+                            <div><strong class="text-teal-700 block">Frecuencia:</strong> En rondas de lectura e inspección de instrumentos analógicos.</div>
+                            <div><strong class="text-teal-700 block">Tiempo / Aplicación:</strong> Toma de datos de campo.</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 pt-3 border-t border-slate-200 no-print">
+                        <div class="img-zoom-wrap relative rounded-xl overflow-hidden border border-slate-200 shadow-sm group/img" onclick="openLightbox('img-pe-9-main')">
+                            <img id="img-pe-9-main" src="imagenes/pe-9_1.jpg" alt="Evidencia fotográfica" class="w-full h-48 object-cover transition duration-500 group-hover/img:scale-105">
+                            <div class="absolute top-2 right-2 bg-white/90 backdrop-blur px-2.5 py-1 rounded-full text-[10px] font-bold text-slate-700 shadow-sm flex items-center pointer-events-none">
+                                <i class="fa-solid fa-camera mr-1"></i> Evidencia real
+                            </div>
+                            <button onclick="event.stopPropagation(); openLightbox('img-pe-9-main')" aria-label="Ampliar imagen" class="img-zoom-btn absolute bottom-2 right-2 bg-black/60 hover:bg-black/80 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="w-full rounded-xl overflow-hidden shadow-sm border border-slate-200 bg-slate-900">
+                            <video controls playsinline preload="metadata" class="w-full max-h-56" src="videos/pe-9.mp4">
+                                Tu navegador no soporta la reproducción de video.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- POSTURA ERGONÓMICA 10 -->
+                <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-xs font-bold text-teal-800 bg-teal-100 px-2.5 py-1 rounded-md">Postura Ergonómica #10</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500"><i class="fa-solid fa-display mr-1"></i>Multi-Pantallas</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-lg mb-2">10. Disposición Visual para Múltiples Monitores de Control</h3>
+                        <p class="text-xs text-slate-600 mb-3">
+                            <strong>Paso a paso:</strong> Disponga las pantallas principales centradas en un arco semicircular a una distancia de un brazo ($50-70\text{ cm}$). Rote la silla completa en vez de girar únicamente la cabeza para mirar los monitores laterales auxiliares.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs mb-4 bg-white p-3 rounded-xl border border-slate-200">
+                            <div><strong class="text-teal-700 block">Beneficios:</strong> Elimina el latigazo cervical leve y reduce la fatiga acumulada en la columna vertebral.</div>
+                            <div><strong class="text-teal-700 block">Frecuencia:</strong> Constante en salas de control distribuido (DCS).</div>
+                            <div><strong class="text-teal-700 block">Tiempo / Aplicación:</strong> Monitoreo continuo de procesos.</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 pt-3 border-t border-slate-200 no-print">
+                        <div class="img-zoom-wrap relative rounded-xl overflow-hidden border border-slate-200 shadow-sm group/img" onclick="openLightbox('img-pe-10-main')">
+                            <img id="img-pe-10-main" src="imagenes/pe-10_1.jpg" alt="Evidencia fotográfica" class="w-full h-48 object-cover transition duration-500 group-hover/img:scale-105">
+                            <div class="absolute top-2 right-2 bg-white/90 backdrop-blur px-2.5 py-1 rounded-full text-[10px] font-bold text-slate-700 shadow-sm flex items-center pointer-events-none">
+                                <i class="fa-solid fa-camera mr-1"></i> Evidencia real
+                            </div>
+                            <button onclick="event.stopPropagation(); openLightbox('img-pe-10-main')" aria-label="Ampliar imagen" class="img-zoom-btn absolute bottom-2 right-2 bg-black/60 hover:bg-black/80 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs shadow-md">
+                                <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-center text-xs text-slate-400 italic">
+                            Sin registro de video disponible para este punto.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / FIRMA CORPORATIVA -->
+    <footer class="bg-slate-900 text-white py-12 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="flex items-center justify-center space-x-3 mb-4">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-500 to-industrial-teal flex items-center justify-center font-bold text-white shadow-lg">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <span class="font-heading font-bold text-xl tracking-tight">Instrumentación y Control Industrial</span>
+            </div>
+            <p class="text-slate-400 text-xs max-w-xl mx-auto mb-6">
+                Cartilla técnico-educativa desarrollada para la prevención de desórdenes músculo-esqueléticos, estímulo cognitivo y promoción de la ergonomía ocupacional.
+            </p>
+            <div class="text-xs text-slate-500 border-t border-slate-800 pt-6 flex flex-col sm:flex-row justify-between items-center gap-2 max-w-4xl mx-auto">
+                <span>Ficha SENA: <strong>3238171</strong></span>
+                <span>Autores: <strong>Farid Andrey Alfonso Jaime</strong> &amp; <strong>Fernando Stevan Salgado Jiménez</strong></span>
+                <span>© 2026 Todos los derechos reservados</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+         LIGHTBOX: modal de zoom / imagen completa para las evidencias
+         ============================================================ -->
+    <div id="lightbox-overlay" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/85 backdrop-blur-sm p-4 md:p-10" onclick="closeLightbox(event)">
+        <button onclick="closeLightbox(event)" class="absolute top-4 right-4 md:top-6 md:right-6 text-white/90 hover:text-white bg-white/10 hover:bg-white/20 rounded-full w-11 h-11 flex items-center justify-center text-xl transition z-10" aria-label="Cerrar">
+            <i class="fa-solid fa-times"></i>
+        </button>
+        <div class="max-w-5xl w-full flex flex-col items-center" onclick="event.stopPropagation()">
+            <img id="lightbox-img" src="" alt="" class="max-h-[85vh] w-auto max-w-full object-contain rounded-xl shadow-2xl">
+        </div>
+    </div>
+
+    <!-- SCRIPT: ZOOM / LIGHTBOX Y GALERÍA DE EVIDENCIAS -->
+    <script>
+        // Cambia la imagen principal de una tarjeta cuando se hace clic en una miniatura
+        function setMainImage(mainImgId, newSrc) {
+            const mainImg = document.getElementById(mainImgId);
+            if (mainImg) mainImg.src = newSrc;
+        }
+
+        // Abre el lightbox con la imagen principal (o la que esté activa) de la tarjeta
+        function openLightbox(mainImgId) {
+            const sourceImg = document.getElementById(mainImgId);
+            if (!sourceImg) return;
+            const overlay = document.getElementById('lightbox-overlay');
+            const lightboxImg = document.getElementById('lightbox-img');
+
+            lightboxImg.src = sourceImg.currentSrc || sourceImg.src;
+            lightboxImg.alt = sourceImg.alt || '';
+
+            overlay.classList.remove('hidden');
+            overlay.classList.add('flex');
+            document.body.classList.add('overflow-hidden');
+        }
+
+        function closeLightbox(evt) {
+            if (evt) evt.stopPropagation();
+            const overlay = document.getElementById('lightbox-overlay');
+            overlay.classList.add('hidden');
+            overlay.classList.remove('flex');
+            document.body.classList.remove('overflow-hidden');
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+    </script>
+
+</body></html>
